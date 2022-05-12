@@ -1,0 +1,10 @@
+export const ADD_FORM = "ADD_FORM";
+export const REMOVE_FORM = "REMOVE_FORM";
+
+export const ADD_FORM_LOADING = "ADD_FORM_LOADING";
+export const ADD_FORM_SUCCESS = "ADD_FORM_SUCCESS";
+export const ADD_FORM_ERROR = "ADD_FORM_ERROR";
+
+export const GET_FORM_LOADING = "GET_FORM_LOADING";
+export const GET_FORM_SUCCESS = "GET_FORM_SUCCESS";
+export const GET_FORM_ERROR = "GET_FORM_ERROR";
