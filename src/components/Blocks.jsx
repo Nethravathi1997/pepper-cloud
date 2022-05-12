@@ -12,6 +12,7 @@ function Blocks() {
   function required() {
     let data = document.getElementById("label");
     data.innerHTML = document.getElementById("edited").value;
+    data.style.marginBottom = "0px"
 
     document.getElementById("old").style.display = "block";
     document.getElementById("new").style.display = "none";
@@ -47,6 +48,21 @@ function Blocks() {
     document.getElementById("new2").style.display = "none";
 
     document.getElementById("edited2").value = "";
+  }
+
+  function edit21() {
+    document.getElementById("old21").style.display = "none";
+    document.getElementById("new21").style.display = "block";
+  }
+
+  function required21() {
+    let data = document.getElementById("label21");
+    data.innerHTML = document.getElementById("edited21").value;
+
+    document.getElementById("old21").style.display = "block";
+    document.getElementById("new21").style.display = "none";
+
+    document.getElementById("edited21").value = "";
   }
 
   function edit3() {
@@ -85,7 +101,7 @@ function Blocks() {
         <div style={{
           display: "flex",
           flexDirection: "column",
-          marginLeft: "50px",
+          marginLeft: "0px",
         }}>
         <Form id="form1" className="form">
           <Input id="ip1" className="ip" draggable="true" clone="true">
@@ -100,7 +116,7 @@ function Blocks() {
             </div>
 
             <div id="new" style={{display: "none",}}>
-              <input type="text" id="edited" />
+              <input type="text" id="edited" placeholder="Enter Edited Details"/>
               <button onClick={() => {required();}}>
                 OK
               </button>
@@ -122,7 +138,7 @@ function Blocks() {
             </div>
 
             <div id="new1" style={{display: "none",}}>
-              <input type="text" id="edited1" />
+              <input type="text" id="edited1" placeholder="Enter Edited Details"/>
               <button onClick={() => {required1();}}>
                 OK
               </button>
@@ -144,12 +160,34 @@ function Blocks() {
             </div>
 
             <div id="new2" style={{display: "none",}}>
-              <input type="text" id="edited2" />
+              <input type="text" id="edited2" placeholder="Enter Edited Details"/>
               <button onClick={() => {required2();}}>
                 OK
               </button>
             </div>
             <input type="email" placeholder="Enter Details" />
+          </Input>
+        </Form>
+
+        <Form id="form31" className="form">
+        <Input id="ip31" className="ip" draggable="true" clone="true">
+            <div id="old21" style={{
+              display:"flex",
+            }}>
+              <p id="label21">Password</p>
+              <button onClick={() => {edit21();}}>
+                Edit
+              </button>
+              <br />
+            </div>
+
+            <div id="new21" style={{display: "none",}}>
+              <input type="text" id="edited21" placeholder="Enter Edited Details"/>
+              <button onClick={() => {required21();}}>
+                OK
+              </button>
+            </div>
+            <input type="password" placeholder="Enter Details" />
           </Input>
         </Form>
 
@@ -166,7 +204,7 @@ function Blocks() {
             </div>
 
             <div id="new3" style={{display: "none",}}>
-              <input type="text" id="edited3" />
+              <input type="text" id="edited3"  placeholder="Enter Edited Details"/>
               <button onClick={() => {required3();}}>
                 OK
               </button>
@@ -188,7 +226,7 @@ function Blocks() {
             </div>
 
             <div id="new4" style={{display: "none",}}>
-              <input type="text" id="edited4" />
+              <input type="text" id="edited4" placeholder="Enter Edited Details" />
               <button onClick={() => {required4();}}>
                 OK
               </button>
@@ -200,13 +238,17 @@ function Blocks() {
 
         <hr />
         <div className="formfix">
-          <h1>Create Form Here</h1>
-          <Form id="formfix" className="form"></Form>
-          <Form id="formfix" className="form"></Form>
-          <Form id="formfix" className="form"></Form>
-          <Form id="formfix" className="form"></Form>
-          <Form id="formfix" className="form"></Form>
-          <Form id="formfix" className="form"></Form>
+          <h1 style={{
+        textAlign:"center",
+        paddingBottom:"10px"
+
+        }}>Create Form Here</h1>
+          <Form id="formfix" className="form1"></Form>
+          <Form id="formfix" className="form1"></Form>
+          <Form id="formfix" className="form1"></Form>
+          <Form id="formfix" className="form1"></Form>
+          <Form id="formfix" className="form1"></Form>
+          <Form id="formfix" className="form1"></Form>
         </div>
       </div>
     </div>
