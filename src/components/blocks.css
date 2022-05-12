@@ -1,24 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
     background-color: white;
 }
 .flexbox{
     display: flex;
-    
-    justify-content: space-between;
     width: 100%;
-    max-width: 800px;
+   
     height: 100vh;
     overflow: hidden;
     margin: 0 auto;
     padding: 15px;
-
-
-
+    border: 1px solid black;
 }
 .flexbox .form{
     display: flex;
@@ -34,6 +29,8 @@ body{
     cursor: pointer;
     margin-bottom: 15px;
 }
+
+
 .formfix{
     display: flex;
     flex-direction: column;
@@ -43,4 +40,20 @@ body{
     padding: 15px;
    
 
+}
+
+#old button {
+    margin-left: 50px;
+}
+#old1 button {
+    margin-left: 50px;
+}
+#old2 button {
+    margin-left: 90px;
+}
+#old3 button {
+    margin-left: 20px;
+}
+#old4 button {
+    margin-left: 70px;
 }
