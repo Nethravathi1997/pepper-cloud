@@ -16,7 +16,7 @@ function Blocks() {
     document.getElementById("old").style.display = "block";
     document.getElementById("new").style.display = "none";
 
-   document.getElementById("edited").value = "";
+    document.getElementById("edited").value = "";
   }
 
   return (
@@ -32,7 +32,7 @@ function Blocks() {
                 }}
               >
                 Edit
-              </button>{" "}
+              </button>
               <br />
             </div>
 
@@ -51,7 +51,7 @@ function Blocks() {
                 OK
               </button>
             </div>
-            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Enter Details" />
           </Input>
         </Form>
 
